@@ -1,0 +1,29 @@
+function doGet() {
+  return ContentService.createTextOutput("Web app is running");
+}
+
+function doPost(e) {
+
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sheet1");
+
+  sheet.appendRow([
+    new Date(),
+    e.parameter.fullname,
+    e.parameter.email,
+    e.parameter.phone,
+    e.parameter.gender,
+    e.parameter.age,
+    e.parameter.role,
+    e.parameter.organization,
+    e.parameter.training,
+    e.parameter.concern,
+    e.parameter.linkSafety,
+    e.parameter.scamVictim,
+    e.parameter.source,
+    e.parameter.consent
+  ]);
+
+  return ContentService
+    .createTextOutput(JSON.stringify({result:"success"}))
+    .setMimeType(ContentService.MimeType.JSON);
+}

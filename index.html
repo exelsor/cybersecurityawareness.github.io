@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cybersecurity Awareness Week 2026</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="icon" href="assets/favicon.ico">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Roboto',sans-serif;
+}
+
+body{
+background:#f4f6f8;
+color:#333;
+line-height:1.6;
+}
+
+/* HEADER */
+
+header.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+background:rgba(255,255,255,0.95);
+position:fixed;
+width:100%;
+top:0;
+z-index:999;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo{
+width:120px;
+}
+
+.cta-btn{
+padding:10px 20px;
+background:#0073e6;
+color:#fff;
+text-decoration:none;
+border-radius:25px;
+font-weight:bold;
+transition:.3s;
+}
+
+.cta-btn:hover{
+background:#005bb5;
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+background:url('assets/cybersecurity-bg.jpg') center/cover no-repeat;
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:0 20px;
+margin-top:70px;
+}
+
+.hero-overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.55);
+}
+
+.hero-content{
+position:relative;
+color:#fff;
+max-width:700px;
+}
+
+.hero-content h1{
+font-family:'Montserrat',sans-serif;
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.hero-content h2{
+font-family:'Montserrat',sans-serif;
+font-size:2rem;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:1.2rem;
+margin-bottom:20px;
+}
+
+/* CTA */
+
+.about-btn{
+display:inline-block;
+padding:14px 26px;
+background:#ffcc00;
+color:#000;
+font-weight:bold;
+border-radius:30px;
+text-decoration:none;
+transition:.3s;
+}
+
+.about-btn:hover{
+background:#e6b800;
+transform:translateY(-2px);
+}
+
+/* FORM */
+
+.form-container{
+max-width:700px;
+margin:70px auto;
+padding:40px 30px;
+background:linear-gradient(135deg,#f0f4f8,#d9e2ec);
+border-radius:20px;
+box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+.form-container h2{
+text-align:center;
+margin-bottom:25px;
+font-family:'Montserrat',sans-serif;
+color:#0073e6;
+}
+
+form input,
+form select{
+width:100%;
+padding:14px 18px;
+margin-bottom:18px;
+border-radius:10px;
+border:1px solid #b8c6db;
+font-size:1rem;
+}
+
+form input:focus,
+form select:focus{
+border-color:#0073e6;
+outline:none;
+box-shadow:0 0 8px rgba(0,115,230,0.4);
+}
+
+/* BUTTON */
+
+form button{
+width:100%;
+padding:16px;
+font-size:1.1rem;
+font-weight:bold;
+background:linear-gradient(90deg,#0073e6,#00a1ff);
+color:#fff;
+border:none;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+}
+
+form button:hover{
+background:linear-gradient(90deg,#005bb5,#0080d1);
+}
+
+/* SPINNER */
+
+.spinner{
+display:inline-block;
+width:18px;
+height:18px;
+border:3px solid #ccc;
+border-top:3px solid #0073e6;
+border-radius:50%;
+animation:spin 1s linear infinite;
+margin-right:8px;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+/* RESPONSE MESSAGE */
+
+#responseMessage{
+margin-top:15px;
+text-align:center;
+}
+
+/* SUCCESS */
+
+.success-box{
+background:#e8f7ee;
+border:1px solid #34a853;
+padding:18px;
+border-radius:12px;
+color:#1b5e20;
+font-weight:600;
+animation:fadeIn .4s ease;
+}
+
+/* ERROR */
+
+.error-box{
+background:#fdecea;
+border:1px solid #ea4335;
+padding:18px;
+border-radius:12px;
+color:#7f1d1d;
+font-weight:600;
+animation:fadeIn .4s ease;
+}
+
+@keyframes fadeIn{
+0%{opacity:0;transform:translateY(8px);}
+100%{opacity:1;transform:translateY(0);}
+}
+
+/* FOOTER */
+
+footer{
+background:#1a1a1a;
+color:#fff;
+margin-top:40px;
+}
+
+.footer-inner{
+max-width:1000px;
+margin:auto;
+padding:30px 20px;
+text-align:center;
+}
+
+.social-links{
+margin-top:15px;
+display:flex;
+justify-content:center;
+gap:18px;
+}
+
+.social-links a{
+width:42px;
+height:42px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:#333;
+color:#fff;
+font-size:18px;
+text-decoration:none;
+transition:.3s;
+}
+
+.social-links a:hover{
+background:#0073e6;
+transform:translateY(-3px);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero-content h1{font-size:2rem;}
+.hero-content h2{font-size:1.5rem;}
+
+.form-container{
+margin:40px 15px;
+padding:30px 20px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="header">
+<img src="assets/logo.png" class="logo" alt="Cybersecurity Awareness Week Logo">
+<a href="#form-section" class="cta-btn">Register Now</a>
+</header>
+
+<section class="hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<h1>Cybersecurity Awareness Week 2026</h1>
+<h2>Organized By Exelsor projects Limited</h2>
+
+<p>Join Cybersecurity Awareness Week. Limited seats available.</p>
+
+<a href="about.html" class="about-btn">Learn More About Exelsor</a>
+
+</div>
+
+</section>
+
+<section id="form-section" class="form-container">
+
+<h2>Event Registration</h2>
+
+<form id="registrationForm">
+
+<input type="text" name="fullname" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email Address" required>
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+<select name="gender" required>
+<option value="">Gender</option>
+<option>Male</option>
+<option>Female</option>
+<option>Prefer not to say</option>
+</select>
+
+<select name="age">
+<option value="">Age Range</option>
+<option>Under 15</option>
+<option>15–20</option>
+<option>21–30</option>
+<option>31–40</option>
+<option>41 and above</option>
+</select>
+
+<select name="role">
+<option value="">Are you a</option>
+<option>Student</option>
+<option>Business Owner</option>
+<option>Teacher</option>
+<option>Employee</option>
+<option>Entrepreneur</option>
+<option>Other</option>
+</select>
+
+<input type="text" name="organization" placeholder="School or Organization" required>
+
+<select name="training">
+<option value="">Have you attended a cybersecurity training before?</option>
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<select name="concern">
+<option value="">What concerns you most about online security?</option>
+<option>Hacked social media accounts</option>
+<option>Online scams</option>
+<option>Phishing emails</option>
+<option>Fraudulent links</option>
+<option>Data theft</option>
+<option>Business security</option>
+<option>Other</option>
+</select>
+
+<select name="linkSafety">
+<option value="">Do you know how to check if a shortened link is safe before clicking?</option>
+<option>Yes</option>
+<option>No</option>
+<option>Not sure</option>
+</select>
+
+<select name="scamVictim">
+<option value="">Have you ever fallen victim to an online scam?</option>
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<select name="source">
+<option value="">How did you hear about this event?</option>
+<option>Facebook</option>
+<option>WhatsApp</option>
+<option>Friend</option>
+<option>Other</option>
+</select>
+
+<select name="consent" required>
+<option value="">I agree to receive event updates and cybersecurity tips</option>
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<button type="submit">Submit Registration</button>
+
+</form>
+
+<p id="responseMessage"></p>
+
+</section>
+
+<footer>
+
+<div class="footer-inner">
+
+<p>© 2026 Exelsor Projects Limited</p>
+
+<div class="social-links">
+<a href="https://www.facebook.com/exelsorltd"><i class="fab fa-facebook-f"></i></a>
+<a href="https://www.tiktok.com/@exselsor_projects?_r=1&_t=ZS-94cigZdbmad"><i class="fab fa-tiktok"></i></a>
+<a href="https://www.linkedin.com/company/exelsor/"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://x.com/exelsorltd"><i class="fab fa-x-twitter"></i></a>
+</div>
+
+</div>
+
+</footer>
+
+<script>
+
+document.getElementById("registrationForm").addEventListener("submit",function(e){
+
+e.preventDefault()
+
+const form=document.getElementById("registrationForm")
+const message=document.getElementById("responseMessage")
+const button=form.querySelector("button")
+
+button.disabled=true
+button.innerHTML='<span class="spinner"></span>Submitting...'
+
+message.innerHTML='<span class="spinner"></span> Sending your registration...'
+
+const formData=new FormData(form)
+
+fetch("https://script.google.com/macros/s/AKfycbzdfIkdjHUTDXX46fid6vBN3edWlBRz4-whbprqyPdc2P3A5KapXBqPs6XaODIMsGmy/exec",{
+method:"POST",
+body:formData
+})
+
+.then(res=>res.json())
+
+.then(data=>{
+
+if(data.result==="success"){
+
+message.innerHTML='<div class="success-box">🎉 Registration successful. Thank you for joining Cybersecurity Awareness Week.</div>'
+
+form.reset()
+
+}else{
+
+message.innerHTML='<div class="error-box">⚠️ Submission failed. Please try again.</div>'
+
+}
+
+button.disabled=false
+button.textContent="Submit Registration"
+
+})
+
+.catch(()=>{
+
+message.innerHTML='<div class="error-box">🌐 Network error. Check connection and try again.</div>'
+
+button.disabled=false
+button.textContent="Submit Registration"
+
+})
+
+})
+
+</script>
+
+</body>
+</html>
+
+
+
+
