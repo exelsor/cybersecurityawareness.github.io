@@ -7,14 +7,13 @@ https://exelsor.github.io/cybersecurityawareness.github.io/
 
 ## Overview
 
-Cybersecurity Awareness Week 2026 is a web-based event registration platform built to promote digital safety and cybersecurity education.
+This web-based event registration platform was built to collect participants data for the  cybersecurity awareness week.
 
 The platform allows users to:
 
 * Register for the event
 * Submit personal and survey data
 * Learn about Exelsor Projects Limited
-* Engage with cybersecurity awareness content
 
 The system connects directly to Google Sheets for real-time data collection.
 
@@ -29,9 +28,6 @@ This project solves three problems:
 * Data collection for event participants
   Organizers need structured participant data for planning and follow-up
 
-* Awareness creation
-  The platform promotes cybersecurity education in a simple format
-
 * Low-cost deployment
   No server required. Uses Google Apps Script and GitHub Pages
 
@@ -43,8 +39,6 @@ This project solves three problems:
 * Mobile-first design
 * Real-time form submission
 * Google Sheets integration
-* Loading spinner during submission
-* Success and error feedback messages
 * About page for organization profile
 * Social media integration
 
@@ -170,6 +164,7 @@ Backend
 ## Developer
 
 Name: Calistus
+
 Organization: Exelsor Projects Limited
 
 ---
