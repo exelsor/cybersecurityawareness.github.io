@@ -1,1 +1,1 @@
-# cybersecurityawareness.github.io
+https://exelsor.github.io/cybersecurityawareness.github.io/
